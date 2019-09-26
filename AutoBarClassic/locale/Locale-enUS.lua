@@ -237,6 +237,7 @@ if (GetLocale() == "enUS") then
 		["AutoBarButtonExplosive"] = "Explosive",
 		["AutoBarButtonFishing"] = "Fishing",
 		["AutoBarButtonFood"] = "Food",
+		["AutoBarButtonConjureManagems"] = "Conjure Mana Gems",
 		["AutoBarButtonFoodBuff"] = "Food Buff",
 		["AutoBarButtonFoodCombo"] = "Food Combo",
 		["AutoBarButtonFoodPet"] = "Pet Food",

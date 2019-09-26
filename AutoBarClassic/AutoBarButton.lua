@@ -1408,6 +1408,18 @@ function AutoBarButtonFood.prototype:init(parentBar, buttonDB)
 	self:AddCategory("Consumable.Food.Percent.Basic")
 end
 
+
+
+local AutoBarButtonConjureManagems = AceOO.Class(AutoBarButton)
+AutoBar.Class["AutoBarButtonConjureManagems"] = AutoBarButtonConjureManagems
+
+function AutoBarButtonConjureManagems.prototype:init(parentBar, buttonDB)
+	AutoBarButtonConjureManagems.super.prototype.init(self, parentBar, buttonDB)
+	if (AutoBar.CLASS == "MAGE") then
+		self:AddCategory("Spell.Mage.Conjure Managems")
+	end
+end
+
 --local function SetDisableConjure(info, value)
 --	local buttonDB = AutoBar:GetButtonDB(info.arg.buttonKey)
 --	buttonDB.disableConjure = value

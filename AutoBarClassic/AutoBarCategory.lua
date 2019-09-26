@@ -932,6 +932,13 @@ function AutoBarCategory:Initialize()
 	AutoBarCategoryList["Spell.Mage.Conjure Water"] = AutoBarSpells:new("Spell.Mage.Conjure Water", spellIconList["Conjure Refreshment"], {
 		"MAGE", ABGCS:GetSpellNameByName("Conjure Water"),
 	})
+	
+	AutoBarCategoryList["Spell.Mage.Conjure Managems"] = AutoBarSpells:new("Spell.Mage.Conjure Managems", spellIconList["Conjure Mana Ruby"], {
+		"MAGE", ABGCS:GetSpellNameByName("Conjure Mana Agate"),
+		"MAGE", ABGCS:GetSpellNameByName("Conjure Mana Citrine"),
+		"MAGE", ABGCS:GetSpellNameByName("Conjure Mana Jade"),
+		"MAGE", ABGCS:GetSpellNameByName("Conjure Mana Ruby"),
+	})
 
 
 	AutoBarCategoryList["Spell.Stealth"] = AutoBarSpells:new("Spell.Stealth", spellIconList["Stealth"],
@@ -1022,7 +1029,12 @@ function AutoBarCategory:Initialize()
 	AutoBarCategoryList["Spell.Shields"] = AutoBarSpells:new( "Spell.Shields", spellIconList["Ice Barrier"], nil,
 	{
 		"DRUID", 		ABGCS:GetSpellNameByName("Barkskin"), 	ABGCS:GetSpellNameByName("Barkskin"),
-		"MAGE", 			ABGCS:GetSpellNameByName("Frost Armor"), ABGCS:GetSpellNameByName("Ice Barrier"),
+		"MAGE", 		ABGCS:GetSpellNameByName("Fire Ward"), ABGCS:GetSpellNameByName("Frost Ward"), 
+		"MAGE",			ABGCS:GetSpellNameByName("Frost Ward"), ABGCS:GetSpellNameByName("Fire Ward"),
+		"MAGE", 		ABGCS:GetSpellNameByName("Ice Armor"), ABGCS:GetSpellNameByName("Frost Armor"),
+		"MAGE", 		ABGCS:GetSpellNameByName("Mage Armor"), ABGCS:GetSpellNameByName("Ice Armor"),
+		"MAGE",			ABGCS:GetSpellNameByName("Mana Shield"), ABGCS:GetSpellNameByName("Ice Barrier"),
+		"MAGE",			ABGCS:GetSpellNameByName("Ice Barrier"), ABGCS:GetSpellNameByName("Mana Shield"),
 		"PALADIN", 		ABGCS:GetSpellNameByName("Divine Protection"), ABGCS:GetSpellNameByName("Divine Shield"),
 		"PALADIN", 		ABGCS:GetSpellNameByName("Divine Shield"), ABGCS:GetSpellNameByName("Divine Protection"),
 		"PRIEST", 		ABGCS:GetSpellNameByName("Power Word: Shield"), ABGCS:GetSpellNameByName("Power Word: Shield"),

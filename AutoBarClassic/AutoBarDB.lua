@@ -367,7 +367,18 @@ function AutoBar:InitializeDefaults()
 			shuffle = true,
 		}
 	end
+	if (AutoBar.CLASS == "MAGE") then
+		if (not AutoBar.db.account.buttonList["AutoBarButtonConjureManagems"]) then
+			AutoBar.db.account.buttonList["AutoBarButtonConjureManagems"] = {
+				buttonKey = "AutoBarButtonConjureManagems",
+				buttonClass = "AutoBarButtonConjureManagems",
+				barKey = "AutoBarClassBarBasic",
+				defaultButtonIndex = 13,
+				enabled = true,
 
+			}
+		end
+	end
 
 	if (not AutoBar.db.account.buttonList["AutoBarButtonCooldownDrums"]) then
 		AutoBar.db.account.buttonList["AutoBarButtonCooldownDrums"] = {

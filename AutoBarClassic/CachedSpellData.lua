@@ -62,13 +62,21 @@ ABGCS:CacheSpellData(1459, "Arcane Intellect");
 ABGCS:CacheSpellData(5504, "Conjure Water");
 ABGCS:CacheSpellData(587, "Conjure Food");
 
-ABGCS:CacheSpellData(11426, "Ice Barrier");
+
 ABGCS:CacheSpellData(130, "Slow Fall");
 --ABGCS:CacheSpellData(42955, "Conjure Refreshment");
 --ABGCS:CacheSpellData(43987, "Conjure Refreshment Table");
 ABGCS:CacheSpellData(66, "Lesser Invisibility");
 ABGCS:CacheSpellData(885, "Invisibility");
 ABGCS:CacheSpellData(27619, "Ice Block");
+ABGCS:CacheSpellData(10225,"Fire Ward");
+ABGCS:CacheSpellData(10177,"Frost Ward");
+ABGCS:CacheSpellData(7301,"Frost Armor");
+ABGCS:CacheSpellData(10220,"Ice Armor");
+ABGCS:CacheSpellData(22783,"Mage Armor");
+
+ABGCS:CacheSpellData(13033,"Ice Barrier");
+ABGCS:CacheSpellData(10193,"Mana Shield");
 ABGCS:CacheSpellData(11418, "Portal: Undercity");
 ABGCS:CacheSpellData(3563, "Teleport: Undercity");
 ABGCS:CacheSpellData(11420, "Portal: Thunder Bluff");
@@ -81,6 +89,11 @@ ABGCS:CacheSpellData(11416, "Portal: Ironforge");
 ABGCS:CacheSpellData(3562, "Teleport: Ironforge");
 ABGCS:CacheSpellData(11417, "Portal: Orgrimmar");
 ABGCS:CacheSpellData(3567, "Teleport: Orgrimmar");
+ABGCS:CacheSpellData(759, "Conjure Mana Agate");
+ABGCS:CacheSpellData(3552, "Conjure Mana Jade");
+ABGCS:CacheSpellData(10053, "Conjure Mana Citrine");
+ABGCS:CacheSpellData(10054, "Conjure Mana Ruby");
+
 
 --Paladin
 ABGCS:CacheSpellData(498, "Divine Protection");
