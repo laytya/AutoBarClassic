@@ -6,13 +6,18 @@ Website: http://www.wowace.com/
 -- Copyright 2007+ Toadkiller of Proudmoore.
 -- http://muffinmangames.com
 
+-- GLOBALS: GetItemInfo, GetItemSpell, GetMacroInfo, GetContainerNumSlots, GetContainerItemID, GetInventoryItemLink, UnitLevel, GetSpellLink, GetSpellInfo
+-- GLOBALS: UpdateAddOnMemoryUsage, GetAddOnMemoryUsage
+
 local AutoBar = AutoBar
 local ABGCS = AutoBarGlobalCodeSpace
 local ABGData = AutoBarGlobalDataObject
 
 local _
 
-local AceOO = AceLibrary("AceOO-2.0")
+local table, pairs, tostring, type, select, ipairs, strtrim, assert, print = table, pairs, tostring, type, select, ipairs, strtrim, assert, print
+
+local AceOO = MMGHACKAceLibrary("AceOO-2.0")
 
 AutoBarSearch = {}
 AutoBarSearch.spells = {}
@@ -1154,7 +1159,7 @@ function AutoBarSearch:RegisterMacroText(p_macro_guid, p_macro_text, p_macro_ico
 	macro_text_info.macro_text = p_macro_text
 	macro_text_info.ab_type = ABGData.TYPE_MACRO_TEXT
 
-	if (debug) then print("AutoBarSearch:RegisterMacroText", "GUID:", p_macro_guid, "icon:", p_macro_icon, "text:", p_macro_text); end
+	if (debug) then print("AutoBarSearch:RegisterMacroText", "GUID:", p_macro_guid, "icon:", p_macro_icon_override, "text:", p_macro_text); end
 
 end
 
