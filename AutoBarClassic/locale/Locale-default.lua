@@ -173,6 +173,7 @@ local quick_sets =
 	"Muffin.Toys.Companion Pet.Ornamental",
 	"Spell.Charge",
 	"Spell.ER",
+	"Spell.CC",
 	"Spell.Interrupt",
 	"Spell.Mage.Conjure Food",
 	"Spell.Mage.Conjure Water",

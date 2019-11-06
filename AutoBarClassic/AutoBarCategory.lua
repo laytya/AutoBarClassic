@@ -1215,6 +1215,11 @@ function AutoBarCategory:Initialize2()
 		"WARRIOR", ABGCode:GetSpellNameByName("Intercept"),
 	})
 
+	AutoBarCategoryList["Spell.CC"] = AutoBarSpells:new( "Spell.CC", spellIconList["Charge"],
+	{
+		"ROGUE", ABGCode:GetSpellNameByName("Blind"),
+	})
+	
 	AutoBarCategoryList["Spell.ER"] = AutoBarSpells:new( "Spell.ER", spellIconList["Charge"],
 	{
 		"DRUID", ABGCode:GetSpellNameByName("Frenzied Regeneration"),
@@ -1262,6 +1267,7 @@ function AutoBarCategory:Initialize2()
 	{
 		"DRUID", ABGCode:GetSpellNameByName("Travel Form"),
 		"SHAMAN", ABGCode:GetSpellNameByName("Ghost Wolf"),
+		"ROGUE",ABGCode:GetSpellNameByName("Sprint"),
 	})
 
 end

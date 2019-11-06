@@ -128,7 +128,7 @@ ABGCS:CacheSpellData(1784, "Stealth");
 ABGCS:CacheSpellData(1856, "Vanish");
 ABGCS:CacheSpellData(2094, "Blind");
 ABGCS:CacheSpellData(6770, "Sap");
-
+ABGCS:CacheSpellData(8696, "Sprint");
 
 --Shaman
 ABGCS:CacheSpellData(8024, "Flametongue Weapon");
